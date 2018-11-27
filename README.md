@@ -12,9 +12,8 @@
 # 
 
 Dê permissão de execução aos scripts chmod +x *.sh
-Coloque os scripts na sua pasta de usuário (/home/USER/) e renomeie como oculto com "." (ponto)
-de startkde-fast.sh   para   .startkde-fast.sh
-de startplasma-wayland-fast.sh   para   .startplasma-wayland-fast.sh
+Coloque os scripts na pasta /usr/bin/ 
+sudo cp *.sh /usr/bin/ && sudo chmod +x /usr/bin/*.sh
 
 Copie  plasmawayland-fast.desktop   para   /usr/share/wayland-sessions/
 sudo cp plasmawayland-fast.desktop /usr/share/wayland-sessions/
@@ -27,19 +26,19 @@ sudo cp plasma-fast.desktop /usr/share/xsessions/
 Inclua no seu xinit ~/.xinitrc ou ~/.config/sx/sxrc o script: startkde-fast.sh
 Exatamente desta maneira:
 
-exec ~/.startkde-fast.sh
+exec /usr/bin/startkde-fast.sh
 
 # Para wayland
 
 Inclua no seu xinit ~/.xinitrc ou ~/.config/sx/sxrc o script: startkde-fast.sh
 Exatamente desta maneira:
 
-dbus-run-session ~/.startplasma-wayland-fast.sh
+dbus-run-session /usr/bin/startplasma-wayland-fast.sh
 
 # Caso você queira ativar o chaveiro, o kwallet, faça o seguinte:
 Após inicar o sistema vá em  Configurações do kde (systemsettings5) em:
 inicialização e desligamento > iniciar automaticamente > adicionar script
-e adicione:      posinit-kde.sh
+e adicione o script:      posinit-kde.sh
 
 
 #                            (instructions in english)
@@ -47,9 +46,8 @@ e adicione:      posinit-kde.sh
 #
 
 Give chmod +x *.sh scripts permission to execute
-Put the scripts in your user folder (/home/USER/) and rename them as hidden with "."
-from startkde-fast.sh to .startkde-fast.sh
-of startplasma-wayland-fast.sh to .startplasma-wayland-fast.sh
+Put the scripts in folder /usr/bin/
+sudo cp *.sh /usr/bin/ && sudo chmod +x /usr/bin/*.sh
 
 Copy  plasmawayland-fast.desktop   for   /usr/share/wayland-sessions/
 sudo cp plasmawayland-fast.desktop /usr/share/wayland-sessions/
@@ -62,15 +60,15 @@ sudo cp plasma-fast.desktop /usr/share/xsessions/
 Include in your xinit ~/.xinitrc or ~/.config/sx/sxrc the script: startkde-fast.sh
 Exactly this way:
 
-exec ~/.startkde-fast.sh
+exec /usr/bin/startkde-fast.sh
 
 # Para wayland
 Include in your xinit ~/.xinitrc or ~/.config/sx/sxrc the script: startkde-fast.sh
 Exactly this way:
 
-dbus-run-session ~/.startplasma-wayland-fast.sh
+dbus-run-session /usr/bin/startplasma-wayland-fast.sh
 
 # If you want to activate the key chain, kwallet, do the following:
 After you start it in the KDE Settings (systemsettings5) at:
-startup and shutdown > start automatically > add script
+startup and shutdown > autostart > add shell script
 and add:     posinit-kde.sh
