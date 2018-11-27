@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=dbus-run-session /home/$USER/.startplasma-wayland-fast.sh
-TryExec=/home/$USER/.startplasma-wayland-fast.sh
+Exec=dbus-run-session /usr/bin/startplasma-wayland-fast.sh
+TryExec=/usr/bin/startplasma-wayland-fast.sh
 DesktopNames=KDE
 Name=Plasma Fast
 Name[en_GB]=Plasma Fast
