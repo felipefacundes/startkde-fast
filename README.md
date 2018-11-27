@@ -11,6 +11,7 @@
 #                                    Como usar 
 # 
 
+Dê permissão de execução aos scripts chmod +x *.sh
 Coloque os scripts na sua pasta de usuário (/home/USER/) e renomeie como oculto com "." (ponto)
 de startkde-fast.sh   para   .startkde-fast.sh
 de startplasma-wayland-fast.sh   para   .startplasma-wayland-fast.sh
@@ -49,6 +50,7 @@ e adicione:      posinit-kde.sh
 #                                   How to use
 #
 
+Give chmod +x *.sh scripts permission to execute
 Put the scripts in your user folder (/home/USER/) and rename them as hidden with "."
 from startkde-fast.sh to .startkde-fast.sh
 of startplasma-wayland-fast.sh to .startplasma-wayland-fast.sh
