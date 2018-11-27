@@ -28,13 +28,13 @@ if test "x$1" = x--failsafe; then
 fi
 
 # Para kwin
-kwin_x11 --replace --no-kactivities # no-kactivities desativa erros de protocolos
+exec kwin_x11 --replace --no-kactivities # no-kactivities desativa erros de protocolos
 
 # Para compiz
-#compiz --replace && emerald --replace
+#exec compiz --replace && emerald --replace
 
 # Para xfwm4
-#xfwm4 --compositor=on
+#exec xfwm4 --compositor=on
 
 # Para openbox
-#openbox --replace
+#exec openbox --replace
