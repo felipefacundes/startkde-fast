@@ -1,4 +1,4 @@
 #!/bin/bash
 
-exec $HOME/.startkde-fast.sh
-#dbus-run-session $HOME/.startplasma-wayland-fast.sh
+exec /usr/bin/startkde-fast.sh
+#dbus-run-session /usr/bin/startplasma-wayland-fast.sh
