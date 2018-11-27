@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=/home/$USER/.startkde-fast.sh
+TryExec=/home/$USER/.startkde-fast.sh
+DesktopNames=KDE
+Name=Plasma Fast
+Name[en_GB]=Plasma Fast
+Name[pt]=Plasma Fast
+Name[pt_BR]=Plasma Fast
+Comment=Plasma Fast by KDE
+Comment[en_GB]=Plasma Fast by KDE
+Comment[pt]=Plasma Fast do KDE
+Comment[pt_BR]=Plasma Fast do KDE
