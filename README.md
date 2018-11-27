@@ -16,15 +16,11 @@ Coloque os scripts na sua pasta de usuário (/home/USER/) e renomeie como oculto
 de startkde-fast.sh   para   .startkde-fast.sh
 de startplasma-wayland-fast.sh   para   .startplasma-wayland-fast.sh
 
-Crie a pasta:  
-mkdir -p ~/.local/share/wayland-sessions/
-mkdir -p ~/.local/share/xsessions/
+Copie  plasmawayland-fast.desktop   para   /usr/share/wayland-sessions/
+sudo cp plasmawayland-fast.desktop /usr/share/wayland-sessions/
 
-Copie  plasmawayland-fast.desktop   para   /home/seu usuário/.local/share/wayland-sessions/
-cp plasmawayland-fast.desktop ~/.local/share/wayland-sessions/
-
-Copie  plasma-fast.desktop   para   /home/seu usuário/.local/share/xsessions/
-cp plasma-fast.desktop ~/.local/share/xsessions/
+Copie  plasma-fast.desktop   para   /usr/share/xsessions/
+sudo cp plasma-fast.desktop /usr/share/xsessions/
 
 # Para X11 
 
@@ -55,22 +51,18 @@ Put the scripts in your user folder (/home/USER/) and rename them as hidden with
 from startkde-fast.sh to .startkde-fast.sh
 of startplasma-wayland-fast.sh to .startplasma-wayland-fast.sh
 
-Crie a pasta:  
-mkdir -p ~/.local/share/wayland-sessions/
-mkdir -p ~/.local/share/xsessions/
-
 Copy  plasmawayland-fast.desktop   for   /home/your user/.local/share/wayland-sessions/
-cp plasmawayland-fast.desktop ~/.local/share/wayland-sessions/
+sudo cp plasmawayland-fast.desktop /usr/share/wayland-sessions/
 
 Copy  plasma-fast.desktop   for   /home/your user/.local/share/xsessions/
-cp plasma-fast.desktop ~/.local/share/xsessions/
+sudo cp plasma-fast.desktop /usr/share/xsessions/
 
 # For wayland
 
 Include in your xinit ~/.xinitrc or ~/.config/sx/sxrc the script: startkde-fast.sh
 Exactly this way:
 
-exec ~/.pasta/startkde-fast.sh
+exec ~/.startkde-fast.sh
 
 # Para wayland
 Include in your xinit ~/.xinitrc or ~/.config/sx/sxrc the script: startkde-fast.sh
