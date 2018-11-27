@@ -51,10 +51,10 @@ Put the scripts in your user folder (/home/USER/) and rename them as hidden with
 from startkde-fast.sh to .startkde-fast.sh
 of startplasma-wayland-fast.sh to .startplasma-wayland-fast.sh
 
-Copy  plasmawayland-fast.desktop   for   /home/your user/.local/share/wayland-sessions/
+Copy  plasmawayland-fast.desktop   for   /usr/share/wayland-sessions/
 sudo cp plasmawayland-fast.desktop /usr/share/wayland-sessions/
 
-Copy  plasma-fast.desktop   for   /home/your user/.local/share/xsessions/
+Copy  plasma-fast.desktop   for   /usr/share/xsessions/
 sudo cp plasma-fast.desktop /usr/share/xsessions/
 
 # For wayland
