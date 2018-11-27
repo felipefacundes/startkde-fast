@@ -17,8 +17,8 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=0 		# 0 or 1
                                                	# DISPLAY=wayland-0
 export KWIN_OPENGL_INTERFACE=egl_wayland
 export QT_QPA_PLATFORM=wayland-egl
-#export QT_WAYLAND_FORCE_DPI=$kcmfonts_general_forcefontdpiwayland
-#export QT_WAYLAND_FORCE_DPI=96
+export QT_WAYLAND_FORCE_DPI=$kcmfonts_general_forcefontdpiwayland
+export QT_WAYLAND_FORCE_DPI=96
 export WAYLAND_DEBUG=1 command |& tee $HOME/.debug-wayland.out
                                                #X-Server started on display :1
 
