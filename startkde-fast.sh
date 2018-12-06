@@ -32,6 +32,7 @@ exec kwin_x11 --replace --no-kactivities # no-kactivities desativa erros de prot
 
 # Para compiz
 #exec compiz --replace && emerald --replace
+#exec compiz --replace --sm-disable --keep-desktop-hints ccp decoration emerald && emerald --replace
 
 # Para xfwm4
 #exec xfwm4 --compositor=on
